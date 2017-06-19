@@ -1,0 +1,20 @@
+# timepicker.css   Roland Kwee    19 june 2017
+
+        #rk_tpk_container table{
+            border: 1px solid #c5c5c5; 
+            /*border-collapse: collapse; this ruins border-radius */
+            /*border-collapse: separate !important;  not needed*/
+            /* border-spacing: 0;  ruins cell margin */
+            border-collapse: separate;/* separate: all cells have their own independent borders */
+            border-radius: 3px;
+            -moz-border-radius:3px;
+        }
+        #rk_tpk_container th{
+            background-color: #e9e9e9;
+            border-spacing: 0 0;/* does not work */
+        }
+        #rk_tpk_container td {
+            padding: 0.3em;
+            border: 1px solid #c5c5c5; 
+            background-color: #f6f6f6;
+        }

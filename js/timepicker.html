@@ -1,0 +1,85 @@
+<!-- timepicker_container.html    Roland Kwee    19 june 2017
+     html block with the timepicker widget to be included in the main page
+-->
+
+    <div id="rk_tpk_container" style="z-index: 10; position: absolute; display: none;">
+        <table>
+            <tr>
+                <th class="rk_tpk_hhmm" colspan="11">
+                	<span id="rk_tpk_hh" onclick="rk_tpk_showhours();" style="font-size: large;"></span>
+                	<span style="font-size: large;">:</span><!-- future option: separator should be configurable -->
+                	<span id="rk_tpk_mm" onclick="rk_tpk_showminutes();" style="font-size: large;"></span>
+                	<span id="rk_tpk_mode" onclick="rk_tpk_changemode();" style="padding-left: 1em;font-size: small;">24h</span>
+                </th>
+            </tr>
+            <tbody id="rk_tpk_hval_am">
+            	<tr>
+            		<td>0</td>
+            		<td>1</td>
+            		<td>2</td>
+            		<td>3</td>
+            		<td>4</td>
+            		<td>5</td>
+            	</tr>
+            	<tr>
+            		<td>6</td>
+            		<td>7</td>
+            		<td>8</td>
+            		<td>9</td>
+            		<td>10</td>
+            		<td>11</td>
+            	</tr>
+            </tbody>
+            <tbody id="rk_tpk_hval_pm">
+            	<tr>
+            		<td>12</td>
+            		<td>13</td>
+            		<td>14</td>
+            		<td>15</td>
+            		<td>16</td>
+            		<td>17</td>
+            	</tr>
+            	<tr>
+            		<td>18</td>
+            		<td>19</td>
+            		<td>20</td>
+            		<td>21</td>
+            		<td>22</td>
+            		<td>23</td>
+            	</tr>
+            </tbody>
+            <tbody id="rk_tpk_mval">    
+                <tr>
+                    <td>00</td>
+                    <td>05</td>
+                    <td>10</td>
+                    <td>+1</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>20</td>
+                    <td>25</td>
+                    <td>+2</td>
+                </tr>
+                <tr>
+                    <td>30</td>
+                    <td>35</td>
+                    <td>40</td>
+                    <td>+3</td>
+                </tr>
+                <tr>
+                    <td>45</td>
+                    <td>50</td>
+                    <td>55</td>
+                    <td>+4</td>
+                </tr>
+            </tbody>
+            <tr>        
+	            <th colspan="11">
+	               <button onclick="rk_tpk_ondefault();">Default</button>
+	               <button onclick="$('#rk_tpk_container').hide();">Cancel</button>
+	               <button onclick="rk_tpk_onok();">OK</button>
+	            </th>
+            </tr>
+        </table>
+    </div>
