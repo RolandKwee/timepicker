@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>Development of my Timepicker</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.1/jquery.min.js"></script>
+    <link rel="stylesheet"    href="js/timepicker.css" />
+    <script src='js/timepicker.js'></script>
+</head>
+<body>
+    <h1>My time picker with demo, showing the concepts.</h1>
+    <p>This page contains the timepicker code and a demo. It includes all needed concepts, e.g. for getting the screen coordinates.
+		In principle, all areas on the timepicker are clickable.
+		For example, by clicking on the big font hour and minute display in the table header, you can go to the buttons for selecting hours or minutes.    
+     Try this also on your mobile phone. Todo:</p>
+    <ul>
+    	<li>turn into jQuery plugin</li>
+    	<li>close on focusout</li>
+    	<li>make am/pm recalculate the time</li>
+    	<li>add output methods for 24h standard time and for am/pm time output</li>
+    </ul>
+    <label for="tp1">Time 1:</label>
+    <input id="tp1" type="text" class="timepicker" placeholder="Time HH:MM"/><!-- onclick="rk_tpk_show(this);" /-->
+    <br/>
+    <label for="tp1">Time 2:</label>
+    <input id="tp2" type="text" class="timepicker" placeholder="Time HH:MM"/><!-- onclick="rk_tpk_show(this);" /-->
+    
+    <script>
+		$('input.timepicker').timepicker();    
+    </script>
+</body>
+</html>
